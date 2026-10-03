@@ -1,2 +1,2 @@
 # Lillian-Hunt.github.io
-Engineering Portfolio
+Engineering Portfolio hosted as a Github Page
