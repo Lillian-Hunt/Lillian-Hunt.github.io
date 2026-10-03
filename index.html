@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Engineering Portfolio</title>
+    <style>
+        /* Resets margins and ensures the page takes up the full screen */
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: hidden;
+            font-family: system-ui, -apple-system, sans-serif;
+        }
+
+        /* A simple top bar to hold a download link for mobile users */
+        .top-bar {
+            background-color: #222;
+            color: #fff;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 20px;
+        }
+
+        .top-bar a {
+            color: #4DA6FF;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .top-bar a:hover {
+            text-decoration: underline;
+        }
+
+        /* Makes the PDF fill the rest of the screen */
+        iframe {
+            width: 100%;
+            height: calc(100% - 40px);
+            border: none;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="top-bar">
+        <span>Lillian's Engineering Portfolio</span>
+        <!-- Forces a direct download of the PDF -->
+        <a href="portfolio.pdf" download>Download PDF</a>
+    </div>
+
+    <!-- Embeds the PDF. The text inside only shows if iframes aren't supported -->
+    <iframe src="portfolio.pdf" title="Portfolio PDF">
+        <p>Your browser does not support viewing PDFs directly. <a href="portfolio.pdf">Download the Portfolio</a>.</p>
+    </iframe>
+
+</body>
+</html>
